@@ -1,16 +1,13 @@
 import java.awt.Color;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class Rectangle extends Shape{
-    
     int length;
     int width;
     int centreX;
     int centreY;
-
 
     // Rectangle(int length, int width, int centreX, int centreY) {
     //     this.length = null;
@@ -21,15 +18,13 @@ public class Rectangle extends Shape{
     // }
     
 
-
     public void perimeter() {
         this.length = Integer.parseInt(JOptionPane.showInputDialog("Enter your length: "));
         this.width = Integer.parseInt(JOptionPane.showInputDialog("Enter your width: "));
         
         double result = 2 * this.length + 2 * this.width;
         JOptionPane.showMessageDialog(null, "The perimeter of the rectangle is " + result + " UNITS");
-        System.out.println("Area: " + result + "\n");
-        
+        System.out.println("Area: " + result + "\n");  
     }
 
     public void area() {
@@ -40,15 +35,6 @@ public class Rectangle extends Shape{
         JOptionPane.showMessageDialog(null, "The area of the rectangle is " + result + " SQUARE UNITS");
         System.out.println("Area: " + result + "\n");
     }
-
-    // public void position() {
-
-    //     this.centreX = Integer.parseInt(JOptionPane.showInputDialog("Enter centre X cordinate: "));
-    //     this.centreY = Integer.parseInt(JOptionPane.showInputDialog("Enter centre Y cordinate: "));
-
-    //     JOptionPane.showMessageDialog(null, "The position of the square is " + "(" + centreX + "," + centreY + ")");
-    //     System.out.println("Position (" + centreX + "," + centreY + ")");
-    // }
 
 
     public void drawShape() {
@@ -70,6 +56,5 @@ public class Rectangle extends Shape{
         frame.setVisible(true);
         frame.getContentPane().setBackground(Color.BLUE);
         frame.add(panel);
-
     }
 }
