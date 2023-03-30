@@ -1,7 +1,6 @@
 import javax.swing.JOptionPane;
 
 public class Shape {
-
     int centreX;
     int centreY;
 
